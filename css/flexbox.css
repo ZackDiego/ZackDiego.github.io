@@ -12,7 +12,7 @@
     justify-content: space-between;
 }
 
-.main-content {
+.main-content, .hidden-content {
     flex-direction: column;
     align-items: center;
 }
@@ -20,14 +20,18 @@
 .content-box-area {
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 1220px;
 }
 
 
 @media screen and (min-width: 1200px) {
     .content-box {
-        flex: 1 590px;
-        max-width: 590px;
+        flex: 0 0 590px;
     }
 }
 
+/* for hidden content */
+.hidden-content {
+    display: none;
+}
